@@ -7,3 +7,4 @@ int main()
 	sn=a1*n+n*(n-1)*d/2;
 	printf("等差数列前n项的和为：%d\n",sn);
 }
+%d%d中间要有,不知道为什么。
