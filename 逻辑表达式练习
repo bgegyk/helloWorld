@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+	int a=14,b=15,x,y,z;
+	char c='A';
+	x=(a&&b)&&(c<'B');
+	y=(c>'B')&&(b=12);
+	z=(a&&b)||(c>'B');
+	printf("a=%d,b=%d\n",a,b);
+	printf("x=%d,y=%d,z=%d\n",x,y,z);
+}
