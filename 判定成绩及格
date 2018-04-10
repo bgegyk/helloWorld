@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+	float score;
+	printf("输入你的成绩：");
+	scanf("%f",&score);
+	if(score<60.0)
+		printf("score=%3.1f---Fail\n",score);
+	else
+		printf("score=%3.1f---Pass\n",score);
+
+}
