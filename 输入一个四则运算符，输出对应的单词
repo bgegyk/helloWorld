@@ -1,0 +1,16 @@
+#include <stdio.h>
+void main()
+{
+	char c;
+	printf("Enter a character:\n");
+	c=getchar();
+	if(c=='+')
+	printf("PLUS!\n");
+		else if(c=='-')
+	printf("Minus!\n");
+		else if(c=='*')
+	printf("Multiply!\n");
+		else if(c=='/')
+	printf("Divide!\n");
+	else printf("\n???\n");
+}
