@@ -1,0 +1,13 @@
+#include <stdio.h>
+void main()
+{	
+	int a,b,x,y,z;
+	double m;
+	scanf("%d,%d",&a,&b);
+	x=a+b;
+	y=a-b;
+	z=a*b;
+	m=(double)a/b;
+	printf("a+b=%d\n a-b=%d\n a*b=%d\n",x,y,z);
+	printf("a/b=%1f\n",m);
+}
