@@ -1,0 +1,16 @@
+#include <stdio.h>
+void main()
+{
+	char c;
+	printf("1,2,3?\n");
+	c=getchar();
+	if(c>='a'&&c<='z'||c>='A'&&c<='Z')
+		if(c=='a'||c=='A')
+			printf("1\n");
+		else if(c=='r'||c=='R')
+			printf("2\n");
+		else if(c=='m'||c=='M')
+			printf("3\n");
+		else printf("other letter!\n");
+	else printf("no!\n");
+}
