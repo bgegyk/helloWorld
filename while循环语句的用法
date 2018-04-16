@@ -1,0 +1,47 @@
+一、显示一串字符，直接按下回车键。
+(1)
+#include <stdio.h>
+void main()
+{
+	char c;
+	c=getchar();
+	while(c!='\n')
+	{
+		putchar(c);
+		c=getchar();
+	}
+}
+
+(2)
+#include <stdio.h>
+void main()
+{
+	char c;
+    loop: c=getchar();
+	while(c!='\n')
+	{
+		putchar(c);
+		goto loop;
+	}
+}                          loop goto的练习
+
+
+
+
+二、输入一行字符，统计其中字母、数字和其他字符的个数。
+【注】可设置三个计数器变量letter，digit，other分别记录字母、数字和其他字符的个数。
+代码：
+#include <stdio.h>
+void main()
+{
+	int c,letter,digit,other;
+	letter=digit=other=0;
+	printf("输入字符串：\n");
+	while((c=getchar())!='\n')
+		if(c>='a'&&c<='z'||c>='A'&&c<='Z')
+			letter++;
+		else if(c>='0'&&c<='9')
+			digit++;
+		else other++;
+	printf("Letter:%d     Digit:%d     Other:%d\n",letter,digit,other);
+}
