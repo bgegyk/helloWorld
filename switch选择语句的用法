@@ -1,0 +1,30 @@
+某自动加油站有a,b,c三种汽油，单价分别为1.50，1.35，1.18（元/千克），提供了“自己加”或“协助加”两个服务等级，这样用户可以得到5%或10%的优惠。
+根据用户所需的加油量x，汽油品种y和服务类型z（f-自动，m-自己，e-协助），求用户的应付款m。
+
+
+代码如下：
+#include <stdio.h>
+void main()
+{
+	float x,a1,a2,m;
+	char y,z;
+	scanf("%f,%c,%c",&x,&y,&z);
+	switch(y)
+	{
+	case'a':a1=1.5;break;
+	case'b':a1=1.35;break;
+	case'c':a1=1.18;break;
+	}
+	switch(z)
+	{
+	case'f':a2=0;break;
+	case'm':a2=0.05;break;
+	case'e':a2=0.1;break;
+	}
+	m=x*a1*(1-a2);
+	printf("所付油钱为：%f\n",m);
+}
+
+
+
+这个题感觉有问题，自己加优惠5%，反而协助加优惠10%。。。。。。。
