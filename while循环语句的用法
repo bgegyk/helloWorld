@@ -45,3 +45,24 @@ void main()
 		else other++;
 	printf("Letter:%d     Digit:%d     Other:%d\n",letter,digit,other);
 }
+
+
+将输入的整数逆序输出；
+#include<stdio.h>
+void main()
+{
+	int x,y;
+	printf("输入一个整数:");
+	scanf("%d",&x);
+	while(x>0)
+	{
+		y=x%10;
+		printf("%d",y);
+		x=x/10;
+	
+	}
+		printf("\n");
+}
+
+
+这个没难度，%取余，/取整
